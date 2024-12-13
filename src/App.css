@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
+  background: #14213d;
+  color: black;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav{
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: white;
+  left: 0;
+  box-shadow: -5px 19px 36px -8px rgba(0,0,0,0.1);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main{
+  padding-top: 15dvh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.time{
+  font-size: 5rem;
+}
+.fulldate{
+  padding-left : 15px;
+}
+.number-status{
+  font-size: 2rem;
+}
+.aside-section{
+  background: linear-gradient(to right, #4361ee, #4362eea8);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 45px -4px #4362eea8;
+}
+.wind-humidity{
+  font-size: 25pt;
+}
+.search-input{
+  border: none;
+  background: transparent;
+  outline: none;
+}
+.card{
+  background: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.current-weather{
+  /* box-shadow: 0px 0px 48px -29px white; */
+  margin-block: 15px;
+  margin-left: 10px;
+  border-radius: 6px;
+}
+table{
+  background: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.the-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 12rem;
+  overflow: hidden;
+  background: white;
+  margin-bottom: 5px;
+  transform: translateY(30rem);
+  transition: all 1s ease;
+}
+.show-container {
+  transform: translateY(0);
+  transition: all 1s ease;
+  color: rgba(0, 0, 0, 0.555);
+}
+.the-text {
+  font-size: 0.80rem;
+  color: rgba(255, 255, 255, 0.542);
+  margin-top: 2rem;
+}
+.cursor {
+  cursor: pointer;
 }
